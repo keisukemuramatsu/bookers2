@@ -1,0 +1,15 @@
+<h2>User info</h2>
+<%= attachment_image_tag book, :profile_image, :fill, 100, 100, fallback: "no_image.jpg" %>
+<table class="table">
+  <tbody>
+    <tr></tr>
+    <tr>
+      <th>name</th>
+      <th><%= book.name %></th>
+    </tr>
+    <tr>
+      <th>introduction</th>
+      <th><%= book.introduction %></th>
+    </tr>
+  </tbody>
+</table>
